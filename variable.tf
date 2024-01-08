@@ -7,10 +7,10 @@ variable "accountId" {
 }
 
 
-# Define your custom domain name
-#variable "custom_domain_name" {
- # default = "mywebapplication.me" 
-#}
+#Define your custom domain name
+variable "custom_domain_name" {
+  default = "mywebapplication.me" 
+}
 
 # Define your existing SSL certificate ARN
 variable "ssl_certificate_arn" {
@@ -18,7 +18,7 @@ variable "ssl_certificate_arn" {
 }
 
 # Define your hosted zone ID
-#variable "hosted_zone_id" {
-  #default = "Z097808527FMTY6LBEHZQ"  # Replace with your hosted zone ID
-#}
+variable "hosted_zone_id" {
+  default = "Z097808527FMTY6LBEHZQA"  # Replace with your hosted zone ID (incorrect ID)
+}
 
