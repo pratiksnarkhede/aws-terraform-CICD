@@ -1,3 +1,23 @@
+terraform {
+  backend "s3" {
+    bucket = "terraform-state-7878"
+    key    = "pod/terraform.tfstate"
+    region = "us-east-1"
+  }
+}
+
+resource "aws_dynamodb_table" "terraformstate" {
+  name           = "terraformstate"
+  billing_mode   = "PAY_PER_REQUEST"
+  hash_key       = "LockID"
+  attribute {
+    name = "LockID"
+    type = "S"
+  }
+}
+
+
+
 # Create an API Gateway
 resource "aws_api_gateway_rest_api" "employee-api" {
   name        = "employee-api"
