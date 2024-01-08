@@ -19,6 +19,6 @@ variable "ssl_certificate_arn" {
 
 # Define your hosted zone ID
 variable "hosted_zone_id" {
-  default = "Z097808527FMTY6LBEHZQA"  # Replace with your hosted zone ID (incorrect ID)
+  default = "Z097808527FMTY6LBEHZQ"  # Replace with your hosted zone ID 
 }
 
