@@ -8,9 +8,9 @@ variable "accountId" {
 
 
 # Define your custom domain name
-variable "custom_domain_name" {
-  default = "mywebapplication.me" 
-}
+#variable "custom_domain_name" {
+ # default = "mywebapplication.me" 
+#}
 
 # Define your existing SSL certificate ARN
 variable "ssl_certificate_arn" {
